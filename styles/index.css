@@ -15,46 +15,37 @@ body{
     font-size: 1.6rem;
 }
 
-#particles-js{
-    height: 100%;
-    width: 100%;
-}
 
 .background{
-    position: relative;
+    position: relative;  
     height: 100vh;
     
     background: rgb(97,61,193);
     background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
 }
 
-
 .background-conteudo{
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 0rem;
-    height: 100vh;
-    width: 100vw;
-}
-
-.background-conteudo .conteudo{
     margin: 0 auto;
     width: 70%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-
-.background-conteudo .conteudo div{
+.container-apresentacao , .container-img{
     width: 50%;
-    
 }
 
 
-.background-conteudo .conteudo h1{
+
+
+
+
+
+
+
+h1{
     color: #fff;
     font-size: 3rem;
     animation: shadowText 2s linear infinite alternate;
@@ -67,23 +58,23 @@ body{
     }
 }
 
-.background-conteudo .conteudo h1 div{
+h1 div{
     font-size: 5rem;
     width: 100%;
 }
 
-.background-conteudo .conteudo p{
+.background p{
     color: #fff;
     font-size: 1.3rem;
 }
 
-.background-conteudo .conteudo .container-img{
+.background .container-img{
     position: relative;
     height: 30rem;
     width: 30rem;  
 }
 
-.background-conteudo .conteudo .container-img img{
+.background .container-img img{
     position: absolute;
     height: 30rem;
     width: 30rem;
@@ -118,7 +109,7 @@ body{
     }
 }
 
-.background-conteudo .conteudo .container-img{
+.background .container-img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,22 +234,21 @@ h2{
 
 
 @media(max-width: 950px){
-    .background-conteudo{
-        height: 45vh;
-    }
-
     .background{
         height: 45vh;
     }
+    
     h1{
         padding-top: 10rem;
     }
 
-    .background-conteudo .conteudo div{
+    .container-apresentacao{
         width: 100%;
     }
+
+
     
-    .background-conteudo .conteudo .container-img, .angulo-para-baixo{
+    .background .container-img, .angulo-para-baixo{
         display: none;
     }
 
@@ -283,12 +273,12 @@ h2{
     
     }
 
-    .background-conteudo .conteudo{
+    
+    
+    .background-conteudo, .container-sobre-mim{
         width: 90%;
     }
-    .container-sobre-mim{
-        max-width: 90%;
-    }
+   
 
 }
 
