@@ -168,7 +168,7 @@ h2{
 }
 
 .container-sobre-mim{
-    max-width: 70%;
+    width: 70%;
     font-size: 2rem;
     margin: 0 auto;
     display: flex;
@@ -232,6 +232,47 @@ h2{
 }
 
 
+footer{
+    background: rgb(97,61,193);
+    background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
+}
+
+.container-footer{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+
+footer .container-footer div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-left: 0.1rem solid #ffffff10;
+}
+
+
+
+footer h2{
+    text-align: left;
+    font-size: 2rem;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+    padding: 1rem 0rem;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
 
 @media(max-width: 950px){
     .background{
@@ -275,7 +316,7 @@ h2{
 
     
     
-    .background-conteudo, .container-sobre-mim{
+    .background-conteudo, .container-sobre-mim, .container-footer{
         width: 90%;
     }
    
@@ -290,7 +331,7 @@ h2{
 
 }
 
-@media(max-width: 300px){
+@media(max-width: 380px){
     html{
         font-size: 30%;
     }
