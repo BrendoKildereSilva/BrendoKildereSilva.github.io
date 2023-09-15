@@ -188,48 +188,87 @@ h2{
 }
 
 .container-habilidades{
-    max-width: 70%;
+    width: 70%;
     margin: 4rem auto;
 
     display: grid ;
-    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 15rem 15rem;
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
-
-
+    
+    
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .container-habilidades .box{
+    padding: 1rem;
     width: 100%;
     height: 100%;
-
-    padding: 1rem;
-
     border-radius: 0.6rem;
     border: 0.1rem solid #613dc1;
+    overflow: auto;
+}
 
+.container-habilidades .box:hover{
+    background: #613dc1;
+}
+
+.container-habilidades .box:hover .tecnologia{
+    display: none;
+}
+
+.container-habilidades .box:hover .descricao{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+.container-habilidades .box .tecnologia{
+
+    width: 100%;
+    height: 100%;
+    
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.container-habilidades .box .tecnologia span{
+    background: #613dc1;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: #fff;
+    border-radius: 15%;
     text-align: center;
-    color: #707070;
-   
+    font-size: 1.3rem;
+}
+
+.container-habilidades .box .descricao{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #613dc1;
 }
 
 .container-habilidades .box img{
-    width: 5rem;
-    height: auto;
+    width: 7rem;
+    padding: 1rem;
 }
 
-.container-habilidades .box #icon-regex{
-    width: 10rem;
-    height: 5rem;
+.container-habilidades .box #git{
+    width:4rem;
+    height: 4rem;
 }
+
+
 
 
 footer{
@@ -287,6 +326,11 @@ footer a:hover{
         width: 100%;
     }
 
+    .container-habilidades{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 15rem 15rem 15rem;
+    }
+
 
     
     .background .container-img, .angulo-para-baixo{
@@ -305,18 +349,18 @@ footer a:hover{
     }
 
    
-    .container-habilidades{
+    /* {
         
 
         grid-template-columns: 20rem 20rem;
         grid-column-gap: 5rem;
         grid-row-gap: 5rem;
     
-    }
+    } */
 
     
     
-    .background-conteudo, .container-sobre-mim, .container-footer{
+    .container-habilidades, .background-conteudo, .container-sobre-mim, .container-footer{
         width: 90%;
     }
    
