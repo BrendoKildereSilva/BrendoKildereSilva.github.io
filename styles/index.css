@@ -269,11 +269,9 @@ h2{
     height: 4rem;
 }
 
-#container-sobre-mim{
-    display: none;
-}
+
 #container-meus-projetos{
-    display: block;
+    display: none;
     width: 70%;
     margin: 0 auto;
 }
