@@ -127,46 +127,36 @@ h1 div{
 }
 
 
-/* --------------------HEADER */
+/*======================= NAV */
 
-header{
-    z-index: 2;
-    width: 100%;
-    position: fixed;
-    background: #ffffff30;
-    border-bottom: 1px solid #ffffff30;
-    background: rgb(97,61,193);
-    background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
-    opacity: 0.8;
-}
-header .div{
+nav{
+    padding: 4rem 0rem;
     width: 70%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-header a img{
-    height: 3rem;
-    width: 3rem;
+nav button{
+    width: 50%;
+    font-size: 2rem;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
 }
 
-header a{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    color: #fff;
+nav .button-nav-ativo{
+    color: #613dc1;
+    border-bottom: 0.3rem solid #613dc1;
 }
 
-header a:hover{
-    border-bottom:1px solid #fff;
-}
-
-header .box-link{
-    height: 5rem;
+nav .button-nav-desativado{
+    color: #707070;
+    font-weight: 100;
+    border-bottom: 0.3rem solid #707070;
 
 }
+
+
 
 
 /* =======================main */
@@ -174,7 +164,7 @@ h2{
     text-align: center;
     margin-top: 3rem;
     font-size: 4rem;
-    color: #424242;
+    color: #707070;
     font-weight: 100;
 }
 
@@ -279,13 +269,85 @@ h2{
     height: 4rem;
 }
 
+#container-sobre-mim{
+    display: none;
+}
+#container-meus-projetos{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+section{
+    border: 0.1rem solid #613dc1;
+    border-radius: 0.6rem;
+    padding: 2rem 2rem;
+    margin:  2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    width: 96%; 
+}
+
+
+section .container-01, section .container-02{
+    width: 46%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-02{
+    align-items: center;
+}
+
+h3{
+    color: #613dc1;
+}
+
+p{
+    margin-top: 3rem;
+    color: #707070;
+    font-weight: 100;
+}
+
+.container_header{
+    overflow: auto;
+}
+
+span{
+    background: #613dc1;
+    color: #fff;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container_imagem{
+    width: 30rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.container_imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a{
+    color: #613dc1;
+}
 
 
 
-/* footer{
-    background: rgb(97,61,193);
-    background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
-} */
+
+
+
+
+
 
 .container-footer{
     width: 70%;
@@ -374,6 +436,23 @@ footer a:hover{
         display: none;
     }
 
+    section{
+        flex-direction: column;
+    }
+
+    section .container-01, section .container-02{
+        width: 100%;
+    }
+
+    .container-02{
+        margin-top: 3rem;
+    }
+
+    section .container-01, section .container-02{
+        height: 20rem;
+      
+    }
+
    
     
     
@@ -385,20 +464,8 @@ footer a:hover{
     html{
         font-size: 55%;
     }
-
-   
-    /* {
-        
-
-        grid-template-columns: 20rem 20rem;
-        grid-column-gap: 5rem;
-        grid-row-gap: 5rem;
     
-    } */
-
-    
-    
-    .container-habilidades, .background-conteudo, .container-sobre-mim, .container-footer{
+    .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .container-footer{
         width: 90%;
     }
    
@@ -420,6 +487,12 @@ footer a:hover{
 
 }
 
+
+@media(max-width: 250px){
+   
+
+   
+}
 
 
 

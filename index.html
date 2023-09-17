@@ -10,23 +10,8 @@
 
 <body>
     <video class="video-background-do-banner" autoplay muted loop>
-        <source src="public/background-animado.mp4" type="video/mp4">
+        <source src="public/imagens-ilustrativas/background-animado.mp4" type="video/mp4">
     </video>
-
-    <header>
-        <div class="div">
-            <div  class="box-link">
-                <a href="/index.html" >
-                    <img src="public/bk.png" alt="inicio">
-                </a>
-            </div>
-
-            <div class="box-link">
-                <a href="/index.html">meus projetos</a>
-            </div>
-        </div>
-    </header>
-
 
     <div class="background">
 
@@ -39,112 +24,129 @@
                 </div>
 
                 <div class="container-img">
-                    <img src="/public//eu.png">
+                    <img src="/public/imagens-ilustrativas//eu.png">
                 </div>
-
-                <img src="/public/angulo-pequeno-para-baixo.svg" class="angulo-para-baixo">
+                <a href="#main">
+                    <img src="/public/imagens-ilustrativas/angulo-pequeno-para-baixo.svg" class="angulo-para-baixo">
+                </a>
             </div>
     </div>
 
-    <main>
-        <h2>Sobre mim</h2>
-        
-        <div class="container-sobre-mim">
-            <div>
-                <p>
-                    Olá, meu nome é Brendo Kildere, mas você pode me chamar de BK. Eu tenho 20 anos, sou um programador Front-end especializado em Vue.js, e estou animado por ter a oportunidade de compartilhar um pouco sobre mim com você.
-                </p>
-                <p>
-                    Minha jornada na programação começou com uma paixão pela web e a vontade de criar experiências online incríveis. Com o Vue.js, encontrei uma ferramenta poderosa para tornar isso possível. Trabalhar como desenvolvedor Front-end me permitiu colaborar em projetos empolgantes e desafiadores, onde pude transformar ideias criativas em interfaces interativas e responsivas.
-                </p>
+    <main id="main">
 
-                <p>
-                    No entanto, meu compromisso com a excelência não se limita ao que já conquistei. Acredito firmemente que a aprendizagem contínua é a chave para o sucesso na área de desenvolvimento web. Por isso, estou sempre mergulhando em novas tecnologias, explorando as tendências do setor e aperfeiçoando minhas habilidades para atender às demandas em constante evolução.
-                </p>
+        <nav>
+            <button id="button-sobre-mim" class="button-nav-ativo">Sobre mim</button>
+            <button id="button-meus-projetos" class="button-nav-desativado">Meus projetos</button>
+        </nav>
 
-                <p>
-                    Além do Vue.js, também tenho experiência em outras tecnologias da web, como php, mysql e json-web-json, e estou aberto a novos desafios que me permitam expandir ainda mais meu conjunto de habilidades. Acredito que a colaboração e a comunicação eficaz são essenciais em nossa área, e estou sempre pronto para trabalhar em equipe e aprender com meus colegas.
-                </p>
+       
+        <div id="container-sobre-mim">
 
-                <p>
-                    Em resumo, estou comprometido em crescer como desenvolvedor Full-stack e contribuir para projetos que tornem a web um lugar mais inovador e acessível. Mal posso esperar para ver o que o futuro reserva e as oportunidades emocionantes que estão por vir.
-                </p>
+            <h2>Sobre mim</h2>
+            
+            <div class="container-sobre-mim">
+                <div>
+                    <p>
+                        Olá, meu nome é Brendo Kildere, mas você pode me chamar de BK. Eu tenho 20 anos, sou um programador Front-end especializado em Vue.js, e estou animado por ter a oportunidade de compartilhar um pouco sobre mim com você.
+                    </p>
+                    <p>
+                        Minha jornada na programação começou com uma paixão pela web e a vontade de criar experiências online incríveis. Com o Vue.js, encontrei uma ferramenta poderosa para tornar isso possível. Trabalhar como desenvolvedor Front-end me permitiu colaborar em projetos empolgantes e desafiadores, onde pude transformar ideias criativas em interfaces interativas e responsivas.
+                    </p>
 
-                <p>
-                    Muito obrigado por me ouvir, e estou à disposição para qualquer pergunta ou discussão sobre desenvolvimento web e tecnologia.
-                </p>
+                    <p>
+                        No entanto, meu compromisso com a excelência não se limita ao que já conquistei. Acredito firmemente que a aprendizagem contínua é a chave para o sucesso na área de desenvolvimento web. Por isso, estou sempre mergulhando em novas tecnologias, explorando as tendências do setor e aperfeiçoando minhas habilidades para atender às demandas em constante evolução.
+                    </p>
+
+                    <p>
+                        Além do Vue.js, também tenho experiência em outras tecnologias da web, como php, mysql e json-web-json, e estou aberto a novos desafios que me permitam expandir ainda mais meu conjunto de habilidades. Acredito que a colaboração e a comunicação eficaz são essenciais em nossa área, e estou sempre pronto para trabalhar em equipe e aprender com meus colegas.
+                    </p>
+
+                    <p>
+                        Em resumo, estou comprometido em crescer como desenvolvedor Full-stack e contribuir para projetos que tornem a web um lugar mais inovador e acessível. Mal posso esperar para ver o que o futuro reserva e as oportunidades emocionantes que estão por vir.
+                    </p>
+
+                    <p>
+                        Muito obrigado por me ouvir, e estou à disposição para qualquer pergunta ou discussão sobre desenvolvimento web e tecnologia.
+                    </p>
+                </div>
+
+
             </div>
 
+
+            <h2>  Habilidades: </h2>
+
+            <div class="container-habilidades">
+
+                <div class="box">
+                    <div class="tecnologia">
+
+                        <img src="/public/icons-habilidades/html-css-javascript.jpg" alt="icone-html">
+                        <span>html, css e javascript, Json</span>
+                    </div>
+                    <div class="descricao"> <p>HTHTML, CSS e JavaScript são de fato as três tecnologias fundamentais no desenvolvimento web, desempenhando papéis cruciais na criação e na interatividade das páginas da web. JavaScript é, sem dúvida, a tecnologia que mais amo</p></div>
+                </div>
+
+                <div class="box">
+                    <div class="tecnologia">
+                        <img src="/public/icons-habilidades/VUE-NUXTJS.jpg" alt="icone-vue">
+                        <span>Nuxt.js e Vue.js</span>
+                    </div>
+                    <div class="descricao"><p>Vue.js e Nuxt - minha jornada com essas duas tecnologias já ultrapassa dois anos. Simplesmente adoro, não há nada igual a elas. Embora no futuro eu tenha interesse em explorar mais o React e o Angular.</p></div>
+
+                </div>
+
+                <div class="box">
+                    <div class="tecnologia">
+                        <img id="icon-regex" src="/public/icons-habilidades/regex.png" alt="icone-regex">
+                        <span>regex (expressões regulare)</span>
+                    </div>
+                    <div class="descricao"><p>Uso expressões regulares (regex) com frequência para realizar validações de entrada ou criar regras personalizadas para inputs. Sempre que me deparo com desafios desse tipo, as expressões regulares estão lá para me salvar.</p></div>
+
+                </div>
+
+                <div class="box">
+                    <div class="tecnologia">
+                        <img src="/public/icons-habilidades/php-mysql.jpg" alt="icone-php">
+                        <span>php e mysql</span>
+                    </div>
+                    <div class="descricao"><p>PHP e MySQL são o meu kit de ferramentas para o backend. Eu os utilizei bastante para praticar as requisições HTTP. Na época, eu estava enfrentando incertezas sobre como prosseguir, então decidi criar meu próprio servidor PHP com banco de dados para armazenar informações e integrá-lo ao meu site do lado do cliente.</p></div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="tecnologia">
+                        <img src="/public/icons-habilidades/git.png" alt="icone-git" id="git">
+                        <span>Git</span>
+                    </div>
+
+                    <div class="descricao"><p>Estou atualmente aprendendo a usar o Git para o versionamento de código e estou progredindo bem.</p></div>
+
+                </div>
+
+                <div class="box">
+                    <div class="tecnologia">
+                        <img src="/public/icons-habilidades/photosop-ilustrato-aftert.jpg" alt="icone-mysql">
+                        <span>photoshop, adobe ilustrato e After Effects</span>
+                    </div>
+                    <div class="descricao"><p>Adobe Illustrator, Photoshop e After Effects são as cerejas do bolo do meu site. São tecnologias que utilizo para melhorar significativamente o aspecto visual do meu site. Embora o CSS seja eficaz, ele pode ter limitações em termos de recursos criativos. Portanto, pensei: por que não combinar essas ferramentas para alcançar resultados visuais ainda mais impressionantes?</p></div>
+
+                </div>
+
+            </div>
 
         </div>
 
+        <div id="container-meus-projetos">
+            <h2>Meus projetos</h2>
+        </div>  
 
-        <h2>  Habilidades: </h2>
-
-        <div class="container-habilidades">
-
-            <div class="box">
-                <div class="tecnologia">
-
-                    <img src="/public/icons-habilidades/html-css-javascript.jpg" alt="icone-html">
-                    <span>html, css e javascript</span>
-                </div>
-                <div class="descricao"> <p>HTHTML, CSS e JavaScript são de fato as três tecnologias fundamentais no desenvolvimento web, desempenhando papéis cruciais na criação e na interatividade das páginas da web. JavaScript é, sem dúvida, a tecnologia que mais amo</p></div>
-            </div>
-
-            <div class="box">
-                <div class="tecnologia">
-                    <img src="/public/icons-habilidades/VUE-NUXTJS.jpg" alt="icone-vue">
-                    <span>Nuxt.js e Vue.js</span>
-                </div>
-                <div class="descricao"><p>Vue.js e Nuxt - minha jornada com essas duas tecnologias já ultrapassa dois anos. Simplesmente adoro, não há nada igual a elas. Embora no futuro eu tenha interesse em explorar mais o React e o Angular.</p></div>
-
-            </div>
-
-            <div class="box">
-                <div class="tecnologia">
-                    <img id="icon-regex" src="/public/icons-habilidades/regex.png" alt="icone-regex">
-                    <span>regex (expressões regulare)</span>
-                </div>
-                <div class="descricao"><p>Uso expressões regulares (regex) com frequência para realizar validações de entrada ou criar regras personalizadas para inputs. Sempre que me deparo com desafios desse tipo, as expressões regulares estão lá para me salvar.</p></div>
-
-            </div>
-
-            <div class="box">
-                <div class="tecnologia">
-                    <img src="/public/icons-habilidades/php-mysql.jpg" alt="icone-php">
-                    <span>php e mysql</span>
-                </div>
-                <div class="descricao"><p>PHP e MySQL são o meu kit de ferramentas para o backend. Eu os utilizei bastante para praticar as requisições HTTP. Na época, eu estava enfrentando incertezas sobre como prosseguir, então decidi criar meu próprio servidor PHP com banco de dados para armazenar informações e integrá-lo ao meu site do lado do cliente.</p></div>
-
-            </div>
-
-            <div class="box">
-
-                <div class="tecnologia">
-                    <img src="/public/icons-habilidades/git.png" alt="icone-git" id="git">
-                    <span>Git</span>
-                </div>
-
-                <div class="descricao"><p>Estou atualmente aprendendo a usar o Git para o versionamento de código e estou progredindo bem.</p></div>
-
-            </div>
-
-            <div class="box">
-                <div class="tecnologia">
-                    <img src="/public/icons-habilidades/photosop-ilustrato-aftert.jpg" alt="icone-mysql">
-                    <span>photoshop, adobe ilustrato e After Effects</span>
-                </div>
-                <div class="descricao"><p>Adobe Illustrator, Photoshop e After Effects são as cerejas do bolo do meu site. São tecnologias que utilizo para melhorar significativamente o aspecto visual do meu site. Embora o CSS seja eficaz, ele pode ter limitações em termos de recursos criativos. Portanto, pensei: por que não combinar essas ferramentas para alcançar resultados visuais ainda mais impressionantes?</p></div>
-
-            </div>
-
-        </div>
     </main>
 
     <footer>
         <video class="video-background-do-footer" autoplay muted loop>
-            <source src="public/background-animado-2.mp4" type="video/mp4">
+            <source src="public/imagens-ilustrativas/background-animado-2.mp4" type="video/mp4">
         </video>
         
         <div class="container-footer">
@@ -167,6 +169,6 @@
         </div>
     </footer>
     
-
+<script src="scripts/index.js"></script>
 </body>
 </html>

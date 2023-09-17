@@ -1,0 +1,23 @@
+
+{
+    "projetos": { 
+
+        "projeto-cropping-imagem":{
+
+            "titulo": "Cropping Imagem",
+            "descricao": "Após enfrentar dificuldades ao tentar integrar o vue-cropping e o cropping.js no meu projeto, decidi criar minha própria solução para recortar imagens com javascript puro. Mesmo sem ter certeza por onde começar, utilizei apenas HTML, CSS e JavaScript para desenvolver o sistema.",
+            
+            "habilidades":{
+                "habilidade-01": "HTML-5",
+                "habilidade-02": "css",
+                "habilidade-03": "javascript",
+                "habilidade-04": "adobe ilustrato"
+            },
+            
+            "url_imagem": "../public/imagens-projetos/sistema-cropping.jpg",
+
+            "link": "https://brendokilderesilva.github.io/recorte-de-imagem/"
+        }
+    }
+    
+}
