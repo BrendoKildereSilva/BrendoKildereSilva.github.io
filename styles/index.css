@@ -7,6 +7,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.video-background-do-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
 html{
     font-size: 62.5%;
 }
@@ -20,8 +32,7 @@ body{
     position: relative;  
     height: 100vh;
     
-    background: rgb(97,61,193);
-    background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
+    background-size: cover;
 }
 
 .background-conteudo{
@@ -271,10 +282,10 @@ h2{
 
 
 
-footer{
+/* footer{
     background: rgb(97,61,193);
     background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(80,24,230,1) 100%);
-}
+} */
 
 .container-footer{
     width: 70%;
@@ -290,10 +301,13 @@ footer .container-footer div{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-left: 0.1rem solid #ffffff10;
 }
 
 
+footer{
+    position: relative;
+    overflow: hidden;
+}
 
 footer h2{
     text-align: left;
@@ -308,6 +322,15 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+.video-background-do-footer{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    top: -400px;
 }
 
 
@@ -327,7 +350,11 @@ footer a:hover{
     .background{
         height: 45vh;
     }
-    
+
+    .video-background-do-banner{
+        height: 45vh;
+    }
+
     h1{
         padding-top: 10rem;
     }
