@@ -15,7 +15,7 @@ fetch('../json/meus-projetos.json')
             // 
             container_header.className = 'container_header'
             container_imagem.className = 'container_imagem'
-            container_habiliades.className = 'container_habiliades'
+            container_habiliades.className = 'container-habilidades-usadas'
             container_link.className = 'container_link'
             // 
             var h3 = document.createElement('h3')
