@@ -7,6 +7,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth  ;
+}
+
+body{
+
+    font-size: 1.6rem;
+}
+
 .video-background-do-banner {
     position: absolute;
     top: 0;
@@ -17,14 +27,71 @@
     z-index: -1;
 }
 
+.button-config{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;   
+    z-index: 2;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #00000060;
+    padding: 1rem;
+    background: rgb(97,61,193);
+    background: linear-gradient(286deg, rgba(97,61,193,1) 0%, rgba(65,19,190,1) 100%);
 
-
-html{
-    font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
+.svg-icon{
+    border-radius: 1rem;
+    height: 3rem;
+    width: 3rem;
+    fill: #fff;
+}
+
+.svg-icon-option{
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #00000060;
+
+    
+}
+
+.container-config{
+    display: none;
+    background: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 8rem;
+    right: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #00000060;
+    border-radius: 1rem;
+    z-index: 2;
+    width: 30rem;
+}
+
+.container-config .option{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+
+.container-config label{
+    color: #613dc1;
+    font-weight: 600;
+}
+
+.container-config .option button{
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
 }
 
 
@@ -182,10 +249,10 @@ h2{
 
 
 .container-sobre-mim p{
-   font-weight: 100;
-   margin: 2rem 0rem;
-   font-size: 2rem;
-   color: #707070;
+    margin: 2rem 0rem;
+    font-size: 2rem;
+    color: #707070;
+    font-weight: 100;
 }
 
 .container-habilidades{
@@ -229,7 +296,7 @@ h2{
 
 .descricao p{
     margin-top: 0px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -288,7 +355,6 @@ section{
     margin:  2rem 0rem;
     display: flex;
     justify-content: space-between;
-    width: 96%; 
 }
 
 
@@ -300,9 +366,6 @@ section .container-01, section .container-02{
     justify-content: space-between;
 }
 
-.container-02{
-    align-items: center;
-}
 
 h3{
     color: #613dc1;
@@ -311,7 +374,7 @@ h3{
 p{
     margin-top: 3rem;
     color: #707070;
-    font-weight: 100;
+    font-weight: 0;
 }
 
 .container_header{
@@ -324,14 +387,15 @@ span{
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
 .container_imagem{
     width: 30rem;
-    height: 20rem;
+    height: 30rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .container_imagem img{
@@ -340,7 +404,9 @@ span{
     object-fit: cover;
 }
 
-a{
+.container_link{
+    text-align: center;
+    margin-top: 1rem;
     color: #613dc1;
 }
 
@@ -413,11 +479,11 @@ footer a:hover{
 
 @media(max-width: 950px) and (min-height: 500px){
     .background{
-        height: 45vh;
+        height: 60vh;
     }
 
     .video-background-do-banner{
-        height: 45vh;
+        height: 60vh;
     }
 
     h1{
@@ -456,16 +522,13 @@ footer a:hover{
       
     }
 
-   
-    
-    
 }
 
 
 
 @media(max-width: 750px){
     html{
-        font-size: 55%;
+        font-size: 55% ;
     }
     
     .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .container-footer{
@@ -478,23 +541,16 @@ footer a:hover{
 
 @media(max-width: 450px){
     html{
-        font-size: 45%;
+        font-size: 45% ;
     }
 
 }
 
 @media(max-width: 380px){
     html{
-        font-size: 30%;
+        font-size: 30% ;
     }
 
-}
-
-
-@media(max-width: 250px){
-   
-
-   
 }
 
 

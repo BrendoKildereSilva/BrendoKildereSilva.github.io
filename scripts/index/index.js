@@ -103,7 +103,7 @@ fetch('../json/meus-projetos.json')
 
 
         }
-    })
+})
 
 
 
