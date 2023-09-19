@@ -101,11 +101,23 @@ buttonDiminuirtarZoom.addEventListener('click', () => {
     // 
     var TamanhoAtual = computedStyle.fontSize.replace('px', "")
     // 
-    var PorcentagemAtual = (TamanhoAtual/ 16 ) * 100
-    var calculo = (parseFloat(PorcentagemAtual - ZoomAplicar))
+    //  calculo:{tamanho atual/ tamanho de 100%) * 100} 
+    //  resultado: {% do tamanho atual}
+    //  (16 == 100%)
+    // 
+    var PorcentagemAtual = (TamanhoAtual / 16 ) * 100
+    var calculo = parseFloat(PorcentagemAtual - ZoomAplicar)
+
 
     if(ZoomAplicado > -2){
         html.style.fontSize = calculo + '%'
         ZoomAplicado--
     }
 })
+
+
+
+window.addEventListener('resize', () => {
+    // resetar o zom aplicado quando o responsivo for ativado
+    ZoomAplicado = 0
+});

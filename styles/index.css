@@ -357,16 +357,6 @@ section{
     justify-content: space-between;
 }
 
-
-section .container-01, section .container-02{
-    width: 46%;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
 h3{
     color: #613dc1;
 }
@@ -538,7 +528,6 @@ footer a:hover{
 
 }
 
-
 @media(max-width: 450px){
     html{
         font-size: 45% ;
@@ -548,10 +537,12 @@ footer a:hover{
 
 @media(max-width: 380px){
     html{
-        font-size: 30% ;
+        font-size: 40% ;
     }
 
 }
+
+
 
 
 
