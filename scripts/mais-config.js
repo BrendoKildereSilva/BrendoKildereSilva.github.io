@@ -119,5 +119,11 @@ buttonDiminuirtarZoom.addEventListener('click', () => {
 
 window.addEventListener('resize', () => {
     // resetar o zom aplicado quando o responsivo for ativado
+let tamanhoAtual = window.innerWidth;
+let NovoTamanho = window.innerWidth;
+let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
+
+if(DiferençaTamanho > 25){
     ZoomAplicado = 0
+}
 });

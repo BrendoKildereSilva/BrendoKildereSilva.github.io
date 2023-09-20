@@ -11,7 +11,6 @@ window.addEventListener('resize', () => {
   let NovoTamanho = window.innerWidth;
   let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
   
-  alert(DiferençaTamanho) 
   
   if(DiferençaTamanho > 25){
     const fontSizePadrao = "62.5%"
