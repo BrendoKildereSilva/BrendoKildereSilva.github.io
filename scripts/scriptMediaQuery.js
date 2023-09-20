@@ -13,20 +13,20 @@ window.addEventListener('resize', () => {
     let NovoTamanho = window.innerWidth;
     let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
 
-    document.getElementById('h1krl').innerText = DiferençaTamanho
+    alert(DiferençaTamanho) 
 
     if(DiferençaTamanho > 25){
 
       if(window.innerWidth  <= '750'){
-        html.style.fontSize = "55% !important"
+        html.style.fontSize = "55%"
       }
       
       if(window.innerWidth  <= '450'){
-        html.style.fontSize = "45% !important"
+        html.style.fontSize = "45%"
       }
 
       if(window.innerWidth  <= '380'){
-        html.style.fontSize = "40% !important"
+        html.style.fontSize = "40%"
       }
       
     }
