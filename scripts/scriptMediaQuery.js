@@ -5,17 +5,17 @@ let tamanhoAtual = window.innerWidth;
 
 window.addEventListener('resize', () => {
 
+  
+  var html = document.querySelector('html')
+  
+  let NovoTamanho = window.innerWidth;
+  let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
+  
+  alert(DiferençaTamanho) 
+  
+  if(DiferençaTamanho > 25){
     const fontSizePadrao = "62.5%"
-
-    var html = document.querySelector('html')
     html.style.fontSize = fontSizePadrao
-
-    let NovoTamanho = window.innerWidth;
-    let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
-
-    alert(DiferençaTamanho) 
-
-    if(DiferençaTamanho > 25){
 
       if(window.innerWidth  <= '750'){
         html.style.fontSize = "55%"
