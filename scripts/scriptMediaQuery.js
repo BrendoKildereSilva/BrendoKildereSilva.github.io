@@ -13,19 +13,20 @@ window.addEventListener('resize', () => {
     let NovoTamanho = window.innerWidth;
     let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
 
-    alert(DiferençaTamanho)  
-    if(DiferençaTamanho > 100){
+    document.getElementById('h1krl').innerText = DiferençaTamanho
+
+    if(DiferençaTamanho > 25){
 
       if(window.innerWidth  <= '750'){
-        html.style.fontSize = "55%"
+        html.style.fontSize = "55% !important"
       }
       
       if(window.innerWidth  <= '450'){
-        html.style.fontSize = "45%"
+        html.style.fontSize = "45% !important"
       }
 
       if(window.innerWidth  <= '380'){
-        html.style.fontSize = "40%"
+        html.style.fontSize = "40% !important"
       }
       
     }

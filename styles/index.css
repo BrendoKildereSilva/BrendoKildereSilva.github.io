@@ -8,6 +8,7 @@
 }
 
 html{
+    font-size: 62.5%;
     scroll-behavior: smooth  ;
 }
 
@@ -477,7 +478,7 @@ footer a:hover{
     }
 
     .container-config{
-        width: 40vw;
+        width: 20vw;
     }
 }
 
@@ -547,14 +548,12 @@ footer a:hover{
 
 
 @media(max-width: 750px){
-   
+    html{
+        font-size: 55% ;
+    }
     
     .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .container-footer{
         width: 90%;
-    }
-
-    .container-config{
-        width: 55vw;
     }
    
 
@@ -582,8 +581,12 @@ footer a:hover{
     }
 }
 
+@media(max-width: 450px){
+    html{
+        font-size: 45% ;
+    }
 
-
+}
 
 
 
