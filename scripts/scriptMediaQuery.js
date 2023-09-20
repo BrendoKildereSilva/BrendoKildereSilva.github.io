@@ -13,8 +13,8 @@ window.addEventListener('resize', () => {
     let NovoTamanho = window.innerWidth;
     let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
 
-    
-    if(DiferençaTamanho > 50){
+    alert(DiferençaTamanho)  
+    if(DiferençaTamanho > 100){
 
       if(window.innerWidth  <= '750'){
         html.style.fontSize = "55%"
