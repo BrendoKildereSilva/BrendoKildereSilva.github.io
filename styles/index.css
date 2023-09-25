@@ -261,8 +261,8 @@ h2{
     margin: 4rem auto;
 
     display: grid ;
-    grid-template-columns: 28% 28% 28%;
-    grid-template-rows: 15rem 15rem;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 15rem 15rem 15rem;
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     
@@ -299,6 +299,7 @@ h2{
     margin-top: 0px;
     font-weight: 600;
     color: #fff;
+    font-size: 1.4rem;
 }
 
 
@@ -333,7 +334,7 @@ h2{
 }
 
 .container-habilidades .box img{
-    width: 7rem;
+    width: 8rem;
     padding: 1rem;
 }
 
@@ -499,9 +500,11 @@ footer a:hover{
         width: 100%;
     }
 
-    .container-habilidades{
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 15rem 15rem 15rem;
+    .container-habilidades {
+        display: flex;
+    }
+    .container-habilidades .box{
+        display: none;
     }
 
 
@@ -535,16 +538,8 @@ footer a:hover{
 
 
     
-   
-
-    
-
-    
-
-    
 
 }
-
 
 
 @media(max-width: 750px){
@@ -555,7 +550,6 @@ footer a:hover{
     .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .container-footer{
         width: 90%;
     }
-   
 
 }
 
@@ -584,6 +578,15 @@ footer a:hover{
 @media(max-width: 450px){
     html{
         font-size: 45% ;
+    }
+
+}
+
+@media(max-width: 300px){
+    
+
+    .container-config{
+        width: 90vw;
     }
 
 }
