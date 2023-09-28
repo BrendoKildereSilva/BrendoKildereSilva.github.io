@@ -36,6 +36,39 @@ fetch('../json/minhas-habilidades.json')
     // 
     container_habiliades.appendChild(container_box)
 
+    // habilidades carousel
+
+    const Containercarousel = document.getElementById("container-carousel")
+    const divItemCarousel = document.createElement('div')
+    // 
+    const carousel_img_tecnolia = document.createElement('img')
+    const carousel_nome_tecnolia = document.createElement('span')
+    const carousel_p_tecnolia = document.createElement('p')
+    // adicao de valores
+    carousel_img_tecnolia.src = habilidades[KeyHabilidades].imagem_url
+    carousel_nome_tecnolia.innerHTML = habilidades[KeyHabilidades].nome
+    carousel_p_tecnolia.innerHTML = habilidades[KeyHabilidades].descricao
+
+    
+
+
+
+    if(KeyHabilidades == 1){
+        divItemCarousel.className = "carousel-item active"
+    }
+    else
+    {
+        divItemCarousel.className = "carousel-item"
+    }
+
+
+    divItemCarousel.appendChild(carousel_img_tecnolia)
+    divItemCarousel.appendChild(carousel_nome_tecnolia)
+    divItemCarousel.appendChild(carousel_p_tecnolia)
+    Containercarousel.appendChild(divItemCarousel)
+
     
     }
+
+    
 })

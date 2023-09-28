@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="icon" href="/public/imagens-ilustrativas/bk.png" type="image/png">
 
@@ -107,15 +108,35 @@
             <h2>  Habilidades: </h2>
 
             <div id="container-habilidade" class="container-habilidades">
+            </div>
 
 
+            <div id="carouselExample" class="carousel slide">
+
+                <div id="container-carousel" class="carousel-inner">
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </div>
 
+
+
+
         <div id="container-meus-projetos">
             <h2>Meus projetos</h2>
         </div>  
+
+       
 
     </main>
 
@@ -136,11 +157,6 @@
                 <h2>Contato</h2>
                 <a href="https://wa.me/559296059860" target="_blank">WhatsApp</a>
             </div>
-
-            <div class="container-curriculo">
-                <h2>Curriculo</h2>
-                <a href="public/arquivos/Brendo Kildere.pdf" target="_blank">Baixar curriculo</a>
-            </div> 
         </div>
     </footer>
     
@@ -149,5 +165,8 @@
     <script src="scripts/index/minhas-habilidades.js"></script>
     <script src="scripts/scriptMediaQuery.js"></script>
     <script src="scripts/mais-config.js"></script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
 </html>
