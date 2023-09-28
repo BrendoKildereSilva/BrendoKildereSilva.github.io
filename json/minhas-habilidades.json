@@ -29,12 +29,13 @@
             "descricao": "Estou atualmente aprendendo a usar o Git para o versionamento de código e estou progredindo bem.",
             "imagem_url": "../public/icons-habilidades/git.png"
         }
-        ,
-        "06":{
-            "nome": "Extras",
-            "descricao": "*Json *Scss",
-            "imagem_url": "../public/icons-habilidades/photosop-ilustrato-aftert.jpg"
-        }
+    },
+
+    "extras": {
+        "01": "json",
+        "02": "scss",
+        "03": "boostrap",
+        "04": "json-web-token"
     },
 
     "em breve": {

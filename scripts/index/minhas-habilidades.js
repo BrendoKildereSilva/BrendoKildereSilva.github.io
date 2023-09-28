@@ -3,8 +3,10 @@ fetch('../json/minhas-habilidades.json')
     .then(data => {
 
     const habilidades = data.habilidades
+    const EXTRAS = data.extras
     // 
     const container_habiliades = document.getElementById('container-habilidade')
+    const Containercarousel = document.getElementById("container-carousel")
 
     for(let KeyHabilidades in habilidades){
     // criando elementos
@@ -38,7 +40,6 @@ fetch('../json/minhas-habilidades.json')
 
     // habilidades carousel
 
-    const Containercarousel = document.getElementById("container-carousel")
     const divItemCarousel = document.createElement('div')
     // 
     const carousel_img_tecnolia = document.createElement('img')
@@ -67,8 +68,52 @@ fetch('../json/minhas-habilidades.json')
     divItemCarousel.appendChild(carousel_p_tecnolia)
     Containercarousel.appendChild(divItemCarousel)
 
-    
     }
 
+
+
+    // ============= EXTRAS
+
+    // 
+    const ContainerBoxExtras = document.createElement('div')
+    const H1BoxExtras = document.createElement('label')
+    const divComAsTodosAsHabilidadeExtra = document.createElement('div')
+    const CarouseldivComAsTodosAsHabilidadeExtra = document.createElement('div')
+    // 
+    ContainerBoxExtras.className = "box-extras"
+    H1BoxExtras.innerHTML = "Extras"
     
+    for(let KeyExtras in EXTRAS){
+        var span_habilidade_extra = document.createElement('span')
+        var carousel_span_habilidade_extra = document.createElement('span')
+        span_habilidade_extra.innerHTML = EXTRAS[KeyExtras]
+        carousel_span_habilidade_extra.innerHTML = EXTRAS[KeyExtras]
+        // 
+        divComAsTodosAsHabilidadeExtra.appendChild(span_habilidade_extra)
+        CarouseldivComAsTodosAsHabilidadeExtra.appendChild(carousel_span_habilidade_extra)
+    }
+
+    ContainerBoxExtras.appendChild(H1BoxExtras)
+    ContainerBoxExtras.appendChild(divComAsTodosAsHabilidadeExtra)
+    container_habiliades.appendChild(ContainerBoxExtras)
+    
+    // EXTRAS CAROUSEL
+
+
+    const Carousel_new_item = document.createElement('div')
+    const Carousel_h1_extras = document.createElement('span')
+    // 
+    Carousel_new_item.className = "carousel-item"
+    Carousel_h1_extras.innerHTML = "Extras"
+
+
+    Carousel_new_item.appendChild(Carousel_h1_extras)
+    Carousel_new_item.appendChild(CarouseldivComAsTodosAsHabilidadeExtra)
+    Containercarousel.appendChild(Carousel_new_item)
+
+
+
+
 })
+
+
