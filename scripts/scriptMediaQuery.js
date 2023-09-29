@@ -12,6 +12,10 @@ var font380 = "45%"
 // tamanho padrão
 
 
+if(window.innerWidth > '750'){
+  html.style.fontSize = fontSizePadrao
+}
+
 if(window.innerWidth  <= '750'){
   html.style.fontSize = font750
 }
@@ -33,20 +37,23 @@ window.addEventListener('resize', () => {
   let DiferençaTamanho = Math.abs(tamanhoAtual - NovoTamanho);
   html.style.fontSize = fontSizePadrao
   
-  
   if(DiferençaTamanho > 25){
+    
 
-      if(window.innerWidth  <= '750'){
-        html.style.fontSize =  font750
-      }
-      
-      if(window.innerWidth  <= '450'){
+    if(window.innerWidth > '750'){
+      html.style.fontSize = fontSizePadrao
+    }
+    if(window.innerWidth  <= '750'){
+      html.style.fontSize =  font750
+    }
+    
+    if(window.innerWidth  <= '450'){
         html.style.fontSize =  font450
-      }
-
-      if(window.innerWidth  <= '380'){
-        html.style.fontSize =  font380
-      }
+    }
+      
+    if(window.innerWidth  <= '380'){
+      html.style.fontSize =  font380
+    }
       
     }
 

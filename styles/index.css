@@ -378,6 +378,40 @@ h2{
     border-radius: 1rem;
 }
 
+.carousel-item.active img{
+    height: 7rem;
+    width: auto;
+    margin: 1rem;
+}
+
+
+.carousel-item.active div{
+    margin: 3rem 0rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.carousel-item.active span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.carousel-item.active div span{
+    margin: 0.5rem;
+    padding: 0.1rem;
+    text-align: center;
+    background: transparent;
+    color: #613dc1;
+    border-bottom: 0.1rem solid #613dc1;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.carousel-item.active p{
+    font-size: 1.5rem;
+}
+
 
 #container-meus-projetos{
     display: none;
@@ -529,39 +563,6 @@ footer a:hover{
     align-items: center;
     height: 30rem;
     overflow: auto;
-}
-
-.carousel-item.active img{
-    height: 7rem;
-    width: auto;
-    margin: 1rem;
-}
-
-
-.carousel-item.active div{
-    margin: 3rem 0rem;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-}
-.carousel-item.active span{
-    font-size: 2rem;
-    font-weight: 600;
-}
-.carousel-item.active div span{
-    margin: 0.5rem;
-    padding: 0.1rem;
-    text-align: center;
-    background: transparent;
-    color: #613dc1;
-    border-bottom: 0.1rem solid #613dc1;
-    border-radius: 0px;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-.carousel-item.active p{
-    font-size: 1.5rem;
 }
 
 
