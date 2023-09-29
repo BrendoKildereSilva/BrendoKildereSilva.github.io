@@ -368,11 +368,11 @@ h2{
     font-size: 1.3rem;
 }
 
-.container-habilidades label{
+.container-habilidades .box-extras label{
     display: block;
     text-align: center;
     background: #613dc1;
-    width: 14rem;
+    width: 7rem;
     margin: 1rem auto;
     color: #fff;
     border-radius: 1rem;
@@ -652,9 +652,6 @@ footer a:hover{
 
 
 @media(max-width: 750px){
-    html{
-        font-size: 55% ;
-    }
     
     .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .carousel.slide, .container-footer{
         width: 90%;
@@ -684,16 +681,8 @@ footer a:hover{
     }
 }
 
-@media(max-width: 450px){
-    html{
-        font-size: 45% ;
-    }
-
-}
 
 @media(max-width: 300px){
-    
-
     .container-config{
         width: 90vw;
     }
