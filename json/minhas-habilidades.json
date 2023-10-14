@@ -8,7 +8,7 @@
         ,
         "02":{
             "nome": "Veu.js",
-            "descricao": "Minha jornada com Vue.js já ultrapassa dois anos e, simplesmente, adoro essa tecnologia. Não há nada igual a ela. Embora no futuro eu tenha interesse em explorar mais o React e o Angular, minha experiência com Vue.js tem sido excepcional. <br> Por outro lado, após trabalhar intensivamente com o Nuxt.js 2, acabei abandonando-o devido às atualizações que me deixaram insatisfeito, e sigo minha jornada apenas com Vue.js.",
+            "descricao": "Minha jornada com Vue.js já ultrapassa dois anos e, simplesmente, adoro essa tecnologia. Não há nada igual a ela. Embora no futuro eu tenha interesse em explorar mais o React e o Angular, minha experiência com Vue.js tem sido excepcional.",
             "imagem_url": "../public/icons-habilidades/VUE.jpg"
         }
         ,
