@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="icon" href="/public/imagens-ilustrativas/bk.png" type="image/png">
 
@@ -109,23 +108,17 @@
 
             <div id="container-habilidade" class="container-habilidades">
 
-                
             </div>
 
-
-            <div id="carouselExample" class="carousel slide">
-
-                <div id="container-carousel" class="carousel-inner">
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <div id="container-habilidades-carousel">
+                <button id="button-anterior">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"/></svg>
+                    </button>
+                <button id="button-proximo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M7,24a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l8.17-8.17a3,3,0,0,0,0-4.24L6.29,1.71A1,1,0,0,1,7.71.29l8.17,8.17a5,5,0,0,1,0,7.08L7.71,23.71A1,1,0,0,1,7,24Z"/></svg>
+                    </button>
             </div>
 
         </div>
@@ -163,11 +156,9 @@
     
     <script src="scripts/index/nav.js"></script>
     <script src="scripts/index/resgatar-meus-projetos.js"></script>
-    <script src="scripts/index/minhas-habilidades.js"></script>
+    <script src="scripts/index/resgatar-dados-minhas-habilidades.js"></script>
+    <script src="scripts/index/carousel-habilidades.js"></script>
     <script src="scripts/mais-config.js"></script>
     <script src="scripts/scriptMediaQuery.js"></script>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-
 </body>
 </html>

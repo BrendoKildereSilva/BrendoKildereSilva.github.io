@@ -313,7 +313,7 @@ h2{
     align-items: center;
 }
 
-.container-habilidades .box .tecnologia span, .carousel-item.active span{
+.container-habilidades .box .tecnologia span{
     background: #613dc1;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -354,7 +354,7 @@ h2{
     flex-wrap: wrap;
 }
 
-.container-habilidades  div span, .carousel-item.active div span{
+.container-habilidades  div span{
     margin: 0.5rem;
     padding: 0.5rem;
     text-align: center;
@@ -380,36 +380,101 @@ h2{
 
 /* carousel container- habilidades */
 
-.carousel-item.active img{
-    width: auto;
-    height: 15%;
+
+
+
+#container-habilidades-carousel{
+    width: 70%;
+    margin: 5rem auto;
+    position: relative;
+    display: none;
+}
+
+
+#container-habilidades-carousel button{
+    background: transparent;
+    border: 0px;
+    border-radius: 50%;
+    padding: 1rem;
+    background: #cccccc30;
+    cursor: pointer;
+
+   
+}
+
+#container-habilidades-carousel button:hover{
+    background: #cccccc90;
+}
+
+#container-habilidades-carousel #button-proximo{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+#container-habilidades-carousel #button-anterior{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+#container-habilidades-carousel #button-proximo .icon-svg,  #container-habilidades-carousel #button-anterior .icon-svg{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    fill: #613dc1;
+}
+
+
+
+#container-habilidades-carousel .desativo{
+    display: none;
+}
+
+#container-habilidades-carousel .ativo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 1rem 0rem;
+}
+
+#container-habilidades-carousel .ativo span{
+    background: #613dc1;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
     margin: 1rem;
 }
 
-
-.carousel-item.active div{
-    margin: 3rem 0rem;
-    width: 90%;
-    display: flex;
-    justify-content: center;
+#container-habilidades-carousel .ativo img{
+    width: 10%;
 }
 
 
-/* {
+#container-habilidades-carousel #extras div {
+    padding: 2rem;
+}
+#container-habilidades-carousel #extras div span{
     margin: 0.5rem;
-    padding: 0.1rem;
+    padding: 0.5rem;
     text-align: center;
     background: transparent;
     color: #613dc1;
-    border: 0.1rem solid #613dc1;
-    border-radius: 0px;
     font-weight: 600;
     font-size: 1.3rem;
-} */
-
-.carousel-item.active p{
-    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #cccccc90;
+    box-shadow: 0.1rem 0.2rem 0.8rem 0.1rem #00000020;
 }
+
+
+
+
+
+
+
 
 
 #container-meus-projetos{
@@ -534,42 +599,6 @@ footer a:hover{
 }
 
 
-/* CLASSES BOOSTRAP */
-
-.carousel.slide{
-    display: none;
-    padding: 1rem 0rem;
-    width: 70%;
-    margin: 1rem auto;
-    border-bottom: 0.5rem solid #613dc1;
-    
-}
-
-.carousel-inner{
-    margin: 0 auto;
-    width: 100%;
-}
-
-.carousel-item{
-    display: none;
-}
-
-.carousel-item.active{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    overflow: auto;
-}
-
-
-.carousel-control-prev, .carousel-control-next{
-    width:  auto;
-}
-
-
 @media(max-width: 950px){
     .background .container-img img{
         height: 20rem;
@@ -610,7 +639,7 @@ footer a:hover{
         display: none;
     }
 
-    .carousel.slide{
+    #container-habilidades-carousel{
         display: block;
     }
 
@@ -653,7 +682,7 @@ footer a:hover{
 
 @media(max-width: 750px){
     
-    .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, .carousel.slide, .container-footer{
+    .container-habilidades, .background-conteudo, nav, .container-sobre-mim, #container-meus-projetos, #container-habilidades-carousel, .container-footer{
         width: 90%;
     }
 

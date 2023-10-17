@@ -109,7 +109,7 @@ buttonDiminuirtarZoom.addEventListener('click', () => {
     var calculo = parseFloat(PorcentagemAtual - ZoomAplicar)
 
 
-    if(ZoomAplicado > -2){
+    if(ZoomAplicado > -5){
         html.style.fontSize = calculo + '%'
         ZoomAplicado--
     }
