@@ -23,7 +23,7 @@ fetch('../json/minhas-habilidades.json')
     container_descricao.className = "descricao"
     //adicioar valores
     img_tecnologia.src = habilidades[KeyHabilidades].imagem_url
-    span_name_tecnologia.innerHTML = habilidades[KeyHabilidades].nome
+    span_name_tecnologia.innerHTML = habilidades[KeyHabilidades].titulo
     // 
     p_descricao_tecnologia.innerHTML = habilidades[KeyHabilidades].descricao
     // 
