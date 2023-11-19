@@ -480,6 +480,7 @@ h2{
 #container-meus-projetos{
     display: none;
     width: 70%;
+    height: 60vh;
     margin: 0 auto;
 }
 
